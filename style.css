@@ -1,5 +1,7 @@
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Style Variables */
 :root {
     --font: "Poppins", sans-serif;
 
@@ -18,6 +20,7 @@
     --white: #FFFFFF;
 }
 
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -25,5 +28,125 @@
 }
 
 body {
+    background-color: var(--white);
     font-family: var(--font);
 }
+
+/* Section 2 Starts Here */
+.sectionTwo, .subsection, .subsubsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sectionTwo {
+    justify-content: center;
+    align-items: center;
+    padding: 175px 100px;
+    gap: 302px;
+    overflow: hidden;
+
+    background-image: 
+        url(assets/section2-background1.svg),
+        url(assets/section2-background2.svg);
+
+    background-repeat: 
+        no-repeat, 
+        no-repeat;
+
+    background-size: 
+        170%,
+        150%;
+
+    background-position: 
+        left -300px top -2480px,
+        right -300px bottom -980px;
+}
+
+.subsection {
+    gap: 55px;
+}
+
+.subsection.one {
+    justify-content: center;
+    align-items: start;
+}
+
+.sectionTwo h1 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: var(--white);
+}
+
+.sectionTwo p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--black);
+}
+
+.subsubsection {
+    gap: 30px;
+}
+
+.subsection.two, .subsubsection.two {
+    justify-content: center;
+    align-items: end;
+}
+
+.subsubsection > div {
+    background-color: var(--white);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 633px;
+    height: 95px;
+    padding-inline: 30px;
+    gap: 42px;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subsubsection.two > div {
+    justify-content: end;
+    align-items: center;
+}
+
+.subsection.two > h1 {
+   color: var(--primary-500);
+}
+
+.subsection.one {
+    position: relative;
+}
+
+.subsection.one > img {
+    position: absolute;
+    top: -20px;
+    right: -310px;
+    width: 85%;
+}
+
+.subsection.two {
+    position: relative;
+}
+
+.subsection.two > img {
+    position: absolute;
+    top: -120px;
+    left: -290px;
+    width: 90%;
+}
+
+.subsection.three {
+    position: relative;
+}
+
+.subsection.three > img {
+    position: absolute;
+    top: -60px;
+    right: -340px;
+    width: 100%;
+}
+/* Section 2 Ends Here */
