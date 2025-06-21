@@ -1,152 +1,203 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Style Variables */
 :root {
-    --font: "Poppins", sans-serif;
+  --font: "Poppins", sans-serif;
 
-    --primary-500: #0A3F4D;
-    --primary-100: #E0F2F5;
-    --secondary-500: #C32C0E;
+  --primary-500: #0a3f4d;
+  --primary-100: #e0f2f5;
+  --secondary-500: #c32c0e;
 
-    --success-500: #28A745;
-    --error-500: #DC3545;
+  --success-500: #28a745;
+  --error-500: #dc3545;
 
-    --black: #000000;
-    --neutral-black: #383838;
-    --neutral-dark-grey: #3B4050;
-    --neutral-off-white: #F7F6F5;
-    --neutral-light-grey: #F8F8F8;
-    --white: #FFFFFF;
+  --black: #000000;
+  --neutral-black: #383838;
+  --neutral-dark-grey: #3b4050;
+  --neutral-off-white: #f7f6f5;
+  --neutral-light-grey: #f8f8f8;
+  --white: #ffffff;
 }
 
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--white);
-    font-family: var(--font);
+  background-color: var(--white);
+  font-family: var(--font);
 }
 
 /* Section 2 Starts Here */
-.sectionTwo, .subsection, .subsubsection {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.sectionTwo,
+.subsection,
+.subsubsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .sectionTwo {
-    justify-content: center;
-    align-items: center;
-    padding: 175px 100px;
-    gap: 302px;
-    overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 175px 100px;
+  gap: 302px;
+  overflow: hidden;
 
-    background-image: 
-        url(assets/section2-background1.svg),
-        url(assets/section2-background2.svg);
+  background-image: url(assets/section2-background1.svg),
+    url(assets/section2-background2.svg);
 
-    background-repeat: 
-        no-repeat, 
-        no-repeat;
+  background-repeat: no-repeat, no-repeat;
 
-    background-size: 
-        170%,
-        150%;
+  background-size: 170%, 150%;
 
-    background-position: 
-        left -300px top -2480px,
-        right -300px bottom -980px;
+  background-position: left -300px top -2480px, right -300px bottom -980px;
 }
 
 .subsection {
-    gap: 55px;
+  gap: 55px;
 }
 
 .subsection.one {
-    justify-content: center;
-    align-items: start;
+  justify-content: center;
+  align-items: start;
 }
 
 .sectionTwo h1 {
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 50px;
-    color: var(--white);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: var(--white);
 }
 
 .sectionTwo p {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    color: var(--black);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: var(--black);
 }
 
 .subsubsection {
-    gap: 30px;
+  gap: 30px;
 }
 
-.subsection.two, .subsubsection.two {
-    justify-content: center;
-    align-items: end;
+.subsection.two,
+.subsubsection.two {
+  justify-content: center;
+  align-items: end;
 }
 
 .subsubsection > div {
-    background-color: var(--white);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 633px;
-    height: 95px;
-    padding-inline: 30px;
-    gap: 42px;
-    border-radius: 10px;
-    box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.07);
+  background-color: var(--white);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 633px;
+  height: 95px;
+  padding-inline: 30px;
+  gap: 42px;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.07);
 }
 
 .subsubsection.two > div {
-    justify-content: end;
-    align-items: center;
+  justify-content: end;
+  align-items: center;
 }
 
 .subsection.two > h1 {
-   color: var(--primary-500);
+  color: var(--primary-500);
 }
 
 .subsection.one {
-    position: relative;
+  position: relative;
 }
 
 .subsection.one > img {
-    position: absolute;
-    top: -20px;
-    right: -310px;
-    width: 85%;
+  position: absolute;
+  top: -20px;
+  right: -310px;
+  width: 85%;
 }
 
 .subsection.two {
-    position: relative;
+  position: relative;
 }
 
 .subsection.two > img {
-    position: absolute;
-    top: -120px;
-    left: -290px;
-    width: 90%;
+  position: absolute;
+  top: -120px;
+  left: -290px;
+  width: 90%;
 }
 
 .subsection.three {
-    position: relative;
+  position: relative;
 }
 
 .subsection.three > img {
-    position: absolute;
-    top: -60px;
-    right: -340px;
-    width: 100%;
+  position: absolute;
+  top: -60px;
+  right: -340px;
+  width: 100%;
 }
 /* Section 2 Ends Here */
+
+/* Section 3 Starts here*/
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 2.25rem;
+}
+
+.event-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  gap: 50px;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  background-color: #e0f2f5;
+  border-radius: 20px;
+  padding: 15px;
+  gap: 15px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: left;
+}
+.bullet {
+  color: var(--black);
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
