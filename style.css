@@ -234,7 +234,7 @@ li {
   align-items: center;
 }
 .sectionFour .faq .question h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .sectionFour .faq .answer {
   max-height: 0;
@@ -250,11 +250,12 @@ li {
   max-height: 300px;
   animation: fade 1s ease-in-out;
 }
-body .faq.active img {
+.sectionFour .faq.active img {
   transform: rotate(180deg);
 }
-body img {
+.sectionFour img {
   transition: transform 0.5s ease-in;
+  width: 33px;
 }
 
 @keyframes fade {
