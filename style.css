@@ -27,10 +27,168 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   background-color: var(--white);
   font-family: var(--font);
 }
+
+/* Section 1 Starts Here */
+.open-nav {
+  transform: translateX(0%);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--neutral-light-grey);
+  padding: 10px 0;
+}
+/* Mobile view Header starts here */
+.menu,
+.close {
+  width: 45px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  margin: 32px;
+}
+
+.logo {
+  padding: 10px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 180px;
+}
+
+nav {
+  background: var(--neutral-light-grey);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a {
+  display: block;
+  color: var(--black);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav ul {
+  padding: 0;
+  margin-top: 8em;
+}
+/* Mobile view Header ends here */
+/* Section 1 Ends Here */
+
+/* Hero Section Starts Here */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  gap: 50px;
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  flex: 1;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-cta-box {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-cta-box a {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--neutral-off-white);
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.hero-cta a {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero-cta img {
+  width: 50px;
+  padding: 5px;
+}
+
+.hero-cta span {
+  font-weight: 700;
+}
+
+.appstore {
+  background-color: var(--primary-500);
+}
+
+.playstore {
+  background-color: var(--secondary-500);
+}
+/* Hero Section Ends Here */
 
 /* Section 2 Starts Here */
 .sectionTwo,
@@ -189,7 +347,7 @@ h2 {
   align-items: left;
 }
 
-li {
+.sectionThree li {
   list-style-type: none;
   font-size: 1.5rem;
 }
@@ -293,3 +451,93 @@ a {
   cursor: pointer;
   width: 350px;
 }
+/*Section five ends here*/
+
+/* Footer Section Starts Here */
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 50px 70px;
+  background-image: url(assets/background-footer.svg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  padding: 180px;
+}
+
+.footer-logo {
+  padding: 10px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-top: 160px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.footer-links .bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  padding: 90px 0; /* Increase top padding to move text down */
+}
+
+.footer-links li a {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-bottom p {
+  padding: 20px 30px;
+  font-size: 1.3rem;
+}
+
+.footer-links {
+  margin-top: 100px;
+}
+/* Footer Section Ends Here */
+/*Media query for DESKTOP VIEW HEADER starts here*/
+@media only screen and (min-width: 920px) {
+  .menu,
+  .close {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    background: var(--secondary-color);
+    border-radius: 25px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    padding: 5px;
+    gap: 100px;
+  }
+
+  nav li a {
+    font-size: 1rem;
+    background: var(--primary-500);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 178px;
+  }
+}
+/*Media query for DESKTOP VIEW HEADER ends here*/
