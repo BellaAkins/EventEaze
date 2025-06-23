@@ -8,7 +8,7 @@
   --primary-500: #0a3f4d;
   --primary-100: #e0f2f5;
   --secondary-500: #c32c0e;
-
+  --hover-red: #fae5e0;
   --success-500: #28a745;
   --error-500: #dc3545;
 
@@ -39,6 +39,14 @@ a {
 body {
   background-color: var(--white);
   font-family: var(--font);
+  border: 2px;
+}
+
+.styled-cta:hover {
+  background-color: var(--primary-100);
+  color: var(--primary-500);
+  border: 2px solid var(--primary-500);
+  font-weight: 700;
 }
 
 /* Section 1 Starts Here */
@@ -188,6 +196,27 @@ h1 {
 .playstore {
   background-color: var(--secondary-500);
 }
+/*hover unfinished
+.playstore:hover {
+  background-color: var(--hover-red);
+}
+
+.playstore a:hover {
+  color: var(--secondary-500);
+}
+
+.appstore:hover {
+  background-color: var(--primary-100);
+}
+
+.appstore a:hover {
+  color: var(--primary-500);
+}
+
+.appstore a:hover {
+  color: var(--primary-500);
+}*/
+
 /* Hero Section Ends Here */
 
 /* Section 2 Starts Here */
@@ -408,16 +437,7 @@ h2 {
   width: 33px;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} /*Section Four ends here*/
+/*Section Four ends here*/
 
 .sectionFive {
   display: flex;
@@ -450,6 +470,13 @@ a {
   font-weight: 600;
   cursor: pointer;
   width: 350px;
+}
+
+.sectionFive .cta:hover {
+  background-color: var(--primary-100);
+  color: var(--primary-500);
+
+  font-weight: 700;
 }
 /*Section five ends here*/
 
@@ -614,7 +641,7 @@ a {
     color: var(--primary-500);
   }
 
-.sectionTwo p {
+  .sectionTwo p {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -692,7 +719,7 @@ a {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    header {
+  header {
     padding-inline: 60px;
     justify-content: space-between;
   }
@@ -769,7 +796,7 @@ a {
     color: var(--primary-500);
   }
 
-.sectionTwo p {
+  .sectionTwo p {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -787,7 +814,7 @@ a {
     font-size: 2.25rem;
   }
 
-.event-boxes-container {
+  .event-boxes-container {
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -847,7 +874,7 @@ a {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    header {
+  header {
     padding-inline: 60px;
     justify-content: space-between;
   }
@@ -924,7 +951,7 @@ a {
     color: var(--primary-500);
   }
 
-.sectionTwo p {
+  .sectionTwo p {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -942,7 +969,7 @@ a {
     font-size: 2.25rem;
   }
 
-.event-boxes-container {
+  .event-boxes-container {
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -1079,7 +1106,7 @@ a {
     color: var(--primary-500);
   }
 
-.sectionTwo p {
+  .sectionTwo p {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -1097,7 +1124,7 @@ a {
     font-size: 2.25rem;
   }
 
-.event-boxes-container {
+  .event-boxes-container {
     width: 100%;
     gap: 20px;
   }
@@ -1156,7 +1183,7 @@ a {
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
-   header {
+  header {
     padding-inline: 140px;
     justify-content: space-between;
   }
@@ -1233,7 +1260,7 @@ a {
     color: var(--primary-500);
   }
 
-.sectionTwo p {
+  .sectionTwo p {
     font-size: 32px;
     font-weight: 400;
     line-height: 26px;
@@ -1251,7 +1278,7 @@ a {
     font-size: 2.25rem;
   }
 
-.event-boxes-container {
+  .event-boxes-container {
     width: 100%;
     gap: 20px;
   }
@@ -1307,5 +1334,51 @@ a {
 
   .footer-links {
     margin-top: 0px;
+  }
+}
+/*Keyframes*/
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero-text {
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.hero-image {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
