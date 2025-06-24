@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -198,6 +199,7 @@ h1 {
 .playstore {
   background-color: var(--secondary-500);
 }
+
 /*hover unfinished
 .playstore:hover {
   background-color: var(--hover-red);
@@ -520,7 +522,7 @@ a {
 
 .footer-links li a {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
