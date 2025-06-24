@@ -1396,3 +1396,16 @@ section {
     transform: translateY(0px);
   }
 }
+@keyframes subtle-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.sectionThree .event-box:hover {
+  animation: subtle-bounce 0.5s ease-in-out;
+}
