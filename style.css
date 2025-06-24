@@ -42,13 +42,6 @@ body {
   border: 2px;
 }
 
-.styled-cta:hover {
-  background-color: var(--primary-100);
-  color: var(--primary-500);
-  border: 2px solid var(--primary-500);
-  font-weight: 700;
-}
-
 /* Section 1 Starts Here */
 .open-nav {
   transform: translateX(0%);
@@ -103,6 +96,11 @@ nav a {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary-500);
+  font-weight: 700;
 }
 
 nav ul {
@@ -171,6 +169,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
+}
+
+.hero-cta:hover {
+  opacity: 0.85;
 }
 
 .hero-cta a {
@@ -434,7 +436,7 @@ h2 {
 }
 .sectionFour img {
   transition: transform 0.5s ease-in;
-  width: 33px;
+  width: 30px;
 }
 
 /*Section Four ends here*/
@@ -566,6 +568,13 @@ a {
     border-radius: 20px;
     padding: 10px 30px;
     width: 178px;
+  }
+
+  .nav-cta:hover {
+    background-color: var(--primary-100);
+    color: var(--primary-500);
+    border: 2px solid var(--primary-500);
+    font-weight: 700;
   }
 }
 /*Media query for DESKTOP VIEW HEADER ends here*/
