@@ -530,6 +530,11 @@ a {
   font-weight: 300;
 }
 
+.footer-links li a:hover {
+  color: var(--primary-100);
+  font-weight: 400;
+}
+
 .footer-bottom p {
   padding: 20px 30px;
   font-size: 1.3rem;
@@ -1362,7 +1367,8 @@ a {
     opacity: 1;
   }
 }
-section {
+section,
+footer {
   animation: slide-in 1s ease-in-out;
 }
 
