@@ -172,10 +172,6 @@ h1 {
   border-radius: 10px;
 }
 
-.hero-cta:hover {
-  opacity: 0.85;
-}
-
 .hero-cta a {
   text-align: center;
   display: inline-block;
@@ -196,8 +192,16 @@ h1 {
   background-color: var(--primary-500);
 }
 
+.appstore:hover {
+  background: #072c36;
+}
+
 .playstore {
   background-color: var(--secondary-500);
+}
+
+.playstore:hover {
+  background: #9a240b;
 }
 
 /*hover unfinished
